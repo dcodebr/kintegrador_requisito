@@ -1,0 +1,8 @@
+site_name: K-Integrador
+theme:
+  name: readthedocs
+  locale: pt_BR
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - rust
