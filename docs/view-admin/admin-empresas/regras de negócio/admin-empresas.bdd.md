@@ -1,4 +1,4 @@
-# Clientes - Regras de Negócio
+# Empresas - Regras de Negócio
 
 ## Funcionalidade: Cadastro de Empresas
   Como administrador do sistema   
