@@ -2,5 +2,5 @@
 
 ## Módulos
 
-* [Cliente](clientes/clientes.md)
+* [Empresas](clientes/admin-empresas.md)
 * [Admin](admin-tokens/admin-tokens.md)

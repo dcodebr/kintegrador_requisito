@@ -1,7 +1,7 @@
 # Clientes - Mockup
 
 ## View
-![](pencil/svg/admin-clientes.svg)
+![](pencil/svg/admin-empresas.svg)
 
 ## Ações
 |Nome|Tipo de Controle|Descrição|

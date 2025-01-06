@@ -1,8 +1,8 @@
 # Clientes - Regras de Negócio
 
-## Funcionalidade: Cadastro de Cliente
-  Como administrador do sistema
-  Quero cadastrar um cliente novo
+## Funcionalidade: Cadastro de Empresas
+  Como administrador do sistema   
+  Quero cadastrar uma Empresa nova
 
 ### Cenários Válidos: 
 
@@ -17,7 +17,7 @@
     E quando ele preenche o e-mail
     E clica no botão "Salvar"
     Então o sistema deve exibir a mensagem "Cadastro realizado com sucesso"
-    E o cliente deve ser registrado no sistema
+    E a empresa deve ser registrado no sistema
 
 #### Informação automática de Endereço
     Dado que o usuário está na tela de cadastro
