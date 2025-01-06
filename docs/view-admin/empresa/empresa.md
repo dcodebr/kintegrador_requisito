@@ -1,4 +1,4 @@
-# Geral
+# Empresas - Geral
 
 ## Estrutura
 1. [Mockup](mockup/admin-empresas.mockup.md)
