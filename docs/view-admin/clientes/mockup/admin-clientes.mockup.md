@@ -25,3 +25,4 @@
 |Cidade|Caixa de Seleção|Cidade do cliente|SIM|-|Cidade deve pertencer a UF|
 |UF|Caixa de Seleção|UF da cidade do cliente|SIM|-|UF deve estar vinculada à cidade|
 |Telefone|Caixa de Texto|telefone principal do cliente|SIM|20|-|
+|E-mail|Caixa de Texto|E-mail principal do cliente|SIM|100|S|

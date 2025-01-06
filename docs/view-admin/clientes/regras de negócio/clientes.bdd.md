@@ -48,7 +48,7 @@
     Então o sistema deve exibir a mensagem de validação: "Endereço inválido"
     E o cadastro não deve ser realizado
 
-#### Cadastro sem Númnero
+#### Cadastro sem Número
     Dado que o usuário está na tela de cadastro
     Quando ele NÃO preenche o campo Número
     E clica no botão "Salvar"
@@ -69,9 +69,9 @@
     Então o sistema deve exibir a mensagem de validação: "CEP inválido"
     E o cadastro não deve ser realizado
 
-#### Cadastro sem e-mail
+#### Cadastro sem E-mail
     Dado que o usuário está na tela de cadastro
-    Quando ele NÃO preenche o campo e-mail
+    Quando ele preenche o campo e-mail diferente do padrão "exemplo@contato.com"
     E clica no botão "Salvar"
     Então o sistema deve exibir a mensagem de validação: "E-mail inválido"
     E o cadastro não deve ser realizado
