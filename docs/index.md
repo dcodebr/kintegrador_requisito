@@ -1,6 +1,5 @@
 # Home
 
 ## Módulos
-
-* [Cliente](módulos/cliente/cliente.md)
-* [Produto](módulos/produto/produto.md)
+* [View Admin](view-admin/index.md)
+* [View Empresas](view-empresas/index.md)
