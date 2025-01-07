@@ -1,7 +1,7 @@
 # Empresas - Mockup
 
 ## View
-![](pencil/svg/admin-empresas.svg)
+![](pencil/svg/empresa.svg)
 
 ## Ações
 |Nome|Tipo de Controle|Descrição|
@@ -12,8 +12,8 @@
 |**Salvar**|Botão|Salva um registro do módulo Empresas|
 
 ## Controles
-|Nome|Tipo de Controle|Descrição|Obrigatório|Tamanho Max.|Validação|
-|---|:---:|:---:|:---:|---|---|
+|Nome|Tipo de Controle|Descrição|Obrig.|Tam. Max.|Validação|
+|---|:---:|---|:---:|:---:|---|
 |Código|Identidade|Identifica o registro|AUTO|-|-|
 |Nome|Caixa de Texto|Nome/Razão Social da Empresas|SIM|255||
 |CNPJ|Caixa de Texto|CNPJ da Empresas|SIM|14|Validação do CNPJ|
