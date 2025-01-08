@@ -13,7 +13,7 @@
 
 ## Controles
 |Nome|Tipo de Controle|Descrição|Obrig.|Tam. Max.|Validação|
-|---|:---:|---|:---:|:---:|---|
+|---|:---:|---|:---:|:---:|:---:|
 |Código|Identidade|Identifica o registro|AUTO|-|-|
 |Nome|Caixa de Texto|Nome/Razão Social da Empresas|SIM|255||
 |CNPJ|Caixa de Texto|CNPJ da Empresas|SIM|14|Validação do CNPJ|

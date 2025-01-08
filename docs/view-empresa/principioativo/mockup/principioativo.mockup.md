@@ -13,7 +13,7 @@
 
 ## Controles
 |Nome|Tipo de Controle|Descrição|Obrigatório|Tamanho Max.|Validação|
-|---|:---:|:---:|:---:|---|---|
+|---|:---:|---|:---:|:---:|:---:|
 |Código|Identidade|Identifica o registro|AUTO|-|-|
 |Descrição|Caixa de Texto|Descrição completa do Produto|SIM|2024|-|
-|Nome Comercial|Caixa de Texto|Descrição Comercial do produto|SIM|255||
+|Nome Comercial|Caixa de Texto|Descrição Comercial do produto|SIM|255|-|
