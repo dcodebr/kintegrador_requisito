@@ -1,5 +1,5 @@
 # Empresas - Geral
 
 ## Estrutura
-1. [Mockup](mockup/admin-empresas.mockup.md)
-2. [Regras de Negócio](regras%20de%20negócio/admin-empresas.bdd.md)
+1. [Mockup](mockup/empresa.mockup.md)
+2. [Regras de Negócio](regras%20de%20negócio/empresa.bdd.md)
