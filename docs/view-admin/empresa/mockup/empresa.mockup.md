@@ -24,5 +24,5 @@
 |Complemento|Caixa de Texto|Complemento do endereço da Empresas|NÃO|255||
 |Cidade|Caixa de Seleção|Cidade da Empresas|SIM|255|Cidade deve pertencer a UF|
 |UF|Caixa de Seleção|UF da cidade da Empresas|SIM|2|UF deve estar vinculada à cidade|
-|Telefone|Caixa de Texto|telefone principal da Empresas|SIM|20|-|
-|E-mail|Caixa de Texto|E-mail principal da Empresas|SIM|255||
+|Telefone|Caixa de Texto|telefone principal da Empresas|SIM|20|Validação telefone ## ####-####|
+|E-mail|Caixa de Texto|E-mail principal da Empresas|SIM|255|Validação de e-mail|

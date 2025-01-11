@@ -15,8 +15,24 @@
 |Nome|Tipo de Controle|Descrição|Obrigatório|Tamanho Max.|Validação|
 |---|:---:|---|:---:|:---:|:---:|
 |Código|Identidade|Identifica o registro|AUTO|-|-|
+|Redefinir Senha|Botão|||||
 |Login|Caixa de Texto|Login do Usuário|SIM|32|-|
-|Senha|Caixa de Texto|Senha de acesso do Usuário|SIM|64|-|
 |Nome|Caixa de Texto|Nome do Usuário|SIM|255|-|
-|E-mail|Caixa de Texto|E-mail do Usuário|SIM|255|-|
-|Vincular Empresa|Botão|Adiciona um modal de Lista de Empresas a ser vinculada|SIM|-|-|
+|E-mail|Caixa de Texto|E-mail do Usuário|SIM|255|E-mail valido|
+
+
+# Empresas do Usuário
+
+## Ações
+|Nome|Tipo de Controle|Descrição|
+|---|:---:|---|
+|**➕**|Botão|Inclui um registro no módulo Usuário|
+|**❌**|Botão|Salva um registro do módulo Usuário|
+
+## Controles
+|Nome|Tipo de Controle|Descrição|Obrigatório|Tamanho Max.|Validação|
+|---|:---:|---|:---:|:---:|:---:|
+|Código|Caixa De Texto|Ao informar um código e clicar no botão "..." o sistema irá buscar empresa de acordo com o código informado|NÃO|-|-|
+|⋯|Botão|Modal para buscar Empresa caso informado código, ou empresa|SIM|-|-|
+|Empresa|Caixa de Texto|Ao informar uma descrição de empresa, e clicar no botão "..." o sistema irá buscar empresa de acordo com a descrição informada|NÃO|-|-|
+|-|Tabela|Empresas vinculadas ao usuário|SIM|-|<ol><li>Código</li><li>Empresa</li></ol>|

@@ -6,3 +6,30 @@ theme:
   hljs_languages:
     - yaml
     - rust
+nav:
+  - View Admin:
+    - Usuário:
+      - Geral: view-admin/usuario/usuario.md
+      - Mockup: view-admin/usuario/mockup/usuario.mockup.md
+      - Regras de Negócio: view-admin/usuario/regras de negócio/usuario.bdd.md
+    - Empresa:
+      - Geral: view-admin/empresa/empresa.md
+      - Mockup: view-admin/empresa/mockup/empresa.mockup.md
+      - Regras de Negócio: view-admin/empresa/regras de negócio/empresa.bdd.md
+    - Token:
+      - Geral: view-admin/admin-token/admin-tokens.md
+      - Mockup: view-admin/admin-token/mockup/admin-tokens.mockup.md
+      - Regras de Negócio: view-admin/admin-token/regras de negócio/admin-tokens.bdd.md
+    - Princípio Ativo:
+      - Geral: view-admin/principioativo/principioativo.md
+      - Mockup: view-admin/principioativo/mockup/principioativo.mockup.md
+      - Regras de Negócio: view-admin/principioativo/regras de negócio/principioativo.bdd.md
+    - Unidade de Medida:
+      - Geral: view-admin/unidadedemedida/unidadedemedida.md
+      - Mockup: view-admin/unidadedemedida/mockup/unidadedemedida.mockup.md
+      - Regras de Negócio: view-admin/unidadedemedida/regras de negócio/unidadedemedida.bdd.md
+  - View Empresa:
+    - Produto:
+      - Geral: view-empresa/produto/produto.md
+      - Mockup: view-empresa/produto/mockup/produto.mockup.md
+      - Regras de Negócio: view-empresa/produto/regras de negócio/produto.bdd.md
