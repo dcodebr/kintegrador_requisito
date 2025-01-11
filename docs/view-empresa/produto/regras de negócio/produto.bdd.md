@@ -13,6 +13,7 @@ Quero cadastrar um Produto Novo
     E quando ele seleciona o Princípio Ativo
     E quando ele seleciona a Marca/Laboratório
     E quanddo ele seleciona a Unidade de Medida
+    E quando produto possuir lote, deve conter as informações Lote, Data Fabricação, Data Validade, Quantidade preenchida.
     Então o sistema deve exibir a mensagem "Cadastro realizado com sucesso"
     E o produto deve ser registrado no sistema
 
@@ -52,3 +53,10 @@ Quero cadastrar um Produto Novo
     E clica no botão "Salvar"
     Então o sistema deve exibir a mensagem de validação: "Unidade de Medida inválido"
     E o cadastro não deve ser realizado
+
+#### Cadastro sem Lote informado 
+    Dado que o usuário está na tela de cadastro
+    Quando ele NÃO informa corretamente os dados do lote
+    E clica no botão "Inserir"
+    Então o sistema deve exibir a mensagem de validação: "Lote e demais campos precisam ser preenchidos"
+    E o cadastro não deve ser realizados

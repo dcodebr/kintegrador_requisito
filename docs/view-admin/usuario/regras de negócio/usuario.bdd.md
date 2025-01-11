@@ -9,13 +9,17 @@ Quero cadastrar um Usuário Novo
 #### Cadastro com dados corretamente preenchidos
     Dado que o usuário está na tela de cadastro
     Quando ele preenche o campo Login
-    E quando ele preenche o campo Estoque
-    E quando ele preenche o campo Senha
     E quando ele preenche o campo Nome
     E quando ele preenche o campo E-mail
-    E quando ele vincula pelo menos 1 empresa ao cadastro do usuário
+    E quando ele informa o código de uma empresa, e clicar no botão "...", irá abrir um modal de pesquisa para selecionar a empresa a ser vinculada.
+    E quando ele informa a empresa, e clicar no botão "...", irá abrir um modal de pesquisa para selecionar a empresa a ser vinculada.
     Então o sistema deve exibir a mensagem "Cadastro realizado com sucesso"
-    E o usuário deve ser registrado no sistema
+    E o usuário deve ser registrado no sistema, e a senha temporária será encaminhada ao e-mail cadastrado.
+
+#### Botão Redefinir Senha
+    Dado que o usuário está na tela de cadastro
+    Quando ele clicar no botão "Redefinir Senha"
+    Então o sistema irá encaminhar um link de acesso para o e-mail cadastrado.
 
 ### Cenários Inválidos: 
 
@@ -24,13 +28,6 @@ Quero cadastrar um Usuário Novo
     Quando ele NÃO preenche o campo Login
     E clica no botão "Salvar"
     Então o sistema deve exibir a mensagem de validação: "Login inválido"
-    E o cadastro não deve ser realizado
-
-#### Cadastro sem Senha
-    Dado que o usuário está na tela de cadastro
-    Quando ele NÃO preenche o campo Senha
-    E clica no botão "Salvar"
-    Então o sistema deve exibir a mensagem de validação: "Senha inválida"
     E o cadastro não deve ser realizado
 
 #### Cadastro sem Nome
