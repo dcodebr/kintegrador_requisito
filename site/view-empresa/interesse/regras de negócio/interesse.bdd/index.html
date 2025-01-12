@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt_BR" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../../img/favicon.ico" />
+    <title>Regras de Negócio - K-Integrador</title>
+    <link rel="stylesheet" href="../../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Regras de Neg\u00f3cio";
+        var mkdocs_page_input_path = "view-empresa\\interesse\\regras de neg\u00f3cio\\interesse.bdd.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../.." class="icon icon-home"> K-Integrador
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Database</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../database/database/">Modelo Lógico</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Api</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../api/empresa/">Empresa</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../api/usuario/">Usuário</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../api/marca/">Marca</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../api/principioativo/">Princípio Ativo</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../api/tokens/">Tokens</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../api/unidadedemedida/">Unidade de Medida</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">View Admin</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Autenticação</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/autenticacao/autenticacao/">Geral</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/autenticacao/mockup/autenticacao.mockup/">Mockup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/autenticacao/regras%20de%20neg%C3%B3cio/autenticacao.bdd/">Regras de Negócio</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Usuário</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/usuario/usuario/">Geral</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/usuario/mockup/usuario.mockup/">Mockup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/usuario/regras%20de%20neg%C3%B3cio/usuario.bdd/">Regras de Negócio</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Empresa</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/empresa/empresa/">Geral</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/empresa/mockup/empresa.mockup/">Mockup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/empresa/regras%20de%20neg%C3%B3cio/empresa.bdd/">Regras de Negócio</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Token</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/admin-token/admin-tokens/">Geral</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/admin-token/mockup/admin-tokens.mockup/">Mockup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/admin-token/regras%20de%20neg%C3%B3cio/admin-tokens.bdd/">Regras de Negócio</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Princípio Ativo</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/principioativo/principioativo/">Geral</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/principioativo/mockup/principioativo.mockup/">Mockup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/principioativo/regras%20de%20neg%C3%B3cio/principioativo.bdd/">Regras de Negócio</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">View Empresa</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >Produto</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../produto/produto/">Geral</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../produto/mockup/produto.mockup/">Mockup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../produto/regras%20de%20neg%C3%B3cio/produto.bdd/">Regras de Negócio</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Unidade de Medida</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../unidadedemedida/unidadedemedida/">Geral</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../unidadedemedida/mockup/unidadedemedida.mockup/">Mockup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../unidadedemedida/regras%20de%20neg%C3%B3cio/unidadedemedida.bdd/">Regras de Negócio</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Marca</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../marca/marca/">Geral</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../marca/mockup/marca.mockup/">Mockup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../marca/regras%20de%20neg%C3%B3cio/marca.bdd/">Regras de Negócio</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Anúncio</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../anuncio/anuncio/">Geral</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../anuncio/mockup/anuncio.mockup/">Mockup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../anuncio/regras%20de%20neg%C3%B3cio/anuncio.bdd/">Regras de Negócio</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Interesse</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../../interesse/">Geral</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../mockup/interesse.mockup/">Mockup</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Regras de Negócio</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#funcionalidade-lancamento-de-interesse">Funcionalidade: Lançamento de Interesse</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#cenarios-validos">Cenários Válidos:</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#cenarios-invalidos">Cenários Inválidos:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#funcionalidade-pesquisar-anuncios-por-produtos">Funcionalidade: Pesquisar Anúncios por Produtos</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#cenarios-validos_1">Cenários Válidos:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#funcionalidade-registrar-interesse-por-produto-anunciado">Funcionalidade: Registrar Interesse por Produto Anunciado</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#cenarios-validos_2">Cenários Válidos:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#funcionalidade-pesquisar-produtos-anunciados-por-similares">Funcionalidade: Pesquisar Produtos Anunciados Por Similares</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#cenarios-validos_3">Cenários Válidos:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#funcionalidade-pesquisar-anuncios-por-anunciante">Funcionalidade: Pesquisar Anúncios por Anunciante</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#cenarios-validos_4">Cenários Válidos:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#funcionalidade-visualizar-dado-do-anunciante">Funcionalidade: Visualizar Dado do Anunciante</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#cenarios-validos_5">Cenários Válidos:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#funcionalidade-visualizar-anuncio">Funcionalidade: Visualizar Anúncio</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#cenarios-validos_6">Cenários Válidos:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#funcionalidade-importar-itens-do-anuncio-visualizado">Funcionalidade: Importar Itens do Anúncio Visualizado</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#cenarios-validos_7">Cenários Válidos:</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../..">K-Integrador</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">View Empresa</li>
+          <li class="breadcrumb-item">Interesse</li>
+      <li class="breadcrumb-item active">Regras de Negócio</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="interesse-regras-de-negocio">Interesse - Regras de Negócio</h1>
+<h2 id="funcionalidade-lancamento-de-interesse">Funcionalidade: Lançamento de Interesse</h2>
+<p>Como usuário do sistema <br />
+  Quero lançar um novo Interesse</p>
+<h3 id="cenarios-validos">Cenários Válidos:</h3>
+<h4 id="importar-todos-itens-de-anuncio-pela-tela-de-interesse">Importar todos itens de Anúncio pela tela de Interesse</h4>
+<pre><code>Dado que o usuário está na tela de anúncio
+E clica na aba Anúncio Vinculado
+E clica no botão ⋯ para selecionar um anúncio disponível
+E seleciona um anúncio disponível
+E clica no botão "Imp. Todos"
+O sistema deverá importar todos itens do anúncio selecionado para a listagem de itens da "Principal".
+</code></pre>
+<h4 id="importar-itens-selecionados-de-anuncio-pela-tela-de-interesse">Importar itens selecionados de Anúncio pela tela de Interesse</h4>
+<pre><code>Dado que o usuário está na tela de anúncio
+E clica na aba Anúncio Vinculado
+E clica no botão ⋯ para selecionar um anúncio disponível
+E seleciona um anúncio disponível
+E marca o check de ao menos um item da listagem de produtos do Anúncio
+O sistema deverá importar os itens  selecionados do anúncio selecionado para a listagem de itens da "Principal".
+</code></pre>
+<h4 id="alterar-a-quantidade-de-um-item-do-interesse">Alterar a Quantidade de um item do interesse</h4>
+<pre><code>Dado que o usuário está na tela de anúncio
+E clica na aba Anúncio Vinculado
+E clica no botão ⋯ para selecionar um anúncio disponível
+E seleciona um anúncio disponível
+E clica no botão "Imp. Todos"
+E clica na aba "Principal"
+E seleciona um item da listagem de produtos do interesse
+E digita uma quantidade no campo Qtde
+E a quantidade digitada é menor ou igual a quantidade disponível no saldo do anúncio(qtde &lt;= {anuncioproduto.qtde} - {SUM(anunciointeresseproduto.qtde)})
+E clica no botão ➕
+O sistema deverá atualizar o lançamento do item na listagem de produtos do anúncio.
+</code></pre>
+<h4 id="excluir-item-da-listagem-de-produtos-do-anuncio">Excluir item da listagem de produtos do anúncio</h4>
+<pre><code>Dado que o usuário está na tela de anúncio
+E clica na aba Anúncio Vinculado
+E clica no botão ⋯ para selecionar um anúncio disponível
+E seleciona um anúncio disponível
+E clica no botão "Imp. Todos"
+E clica na aba "Principal"
+E seleciona um item da listagem de produtos do interesse
+E clica no botão ❌
+O sistema deverá remover o item da listagem de produtos do interesse.
+</code></pre>
+<h4 id="salvar-o-lancamento-de-um-interesse">Salvar o lançamento de um Interesse</h4>
+<pre><code>Dado que o usuário está na tela de anúncio
+E clica na aba Anúncio Vinculado
+E clica no botão ⋯ para selecionar um anúncio disponível
+E seleciona um anúncio disponível
+E clica no botão "Imp. Todos"
+E clica no botão "Salvar"
+E caso o valor do campo "Total Interesse" seja maior que 0
+O sistema deverá persistir o interesse do anúncio e notificar o anunciante.
+</code></pre>
+<h4 id="exibir-anuncios-disponiveis-para-interesse">Exibir Anúncios Disponíveis para Interesse</h4>
+<pre><code>Dado que o usuário está na tela de anúncio
+E clica no botão "Anúncios"
+O sistema deverá exibir o "Modal Pesquisa Por Anúncios".
+</code></pre>
+<h3 id="cenarios-invalidos">Cenários Inválidos:</h3>
+<h4 id="quantidade-item-de-produto-do-interesse-maior-que-saldo-disponivel">Quantidade item de produto do Interesse maior que saldo disponível</h4>
+<pre><code>Dado que o usuário está na tela de anúncio
+E clica na aba Anúncio Vinculado
+E clica no botão ⋯ para selecionar um anúncio disponível
+E seleciona um anúncio disponível
+E clica no botão "Imp. Todos"
+E clica na aba "Principal"
+E seleciona um item da listagem de produtos do interesse
+E digita uma quantidade no campo Qtde
+E a quantidade digitada é maiora quantidade disponível no saldo do anúncio(qtde &gt; {anuncioproduto.qtde} - {SUM(anunciointeresseproduto.qtde)})
+E clica no botão ➕
+O sistema deverá exibir a mensagem "Quantidade maior que saldo disponível no anúncio" e impedir a alteração.
+</code></pre>
+<h4 id="importar-mais-de-uma-vez-o-mesmo-item-de-produto-sem-lote">Importar mais de uma vez o mesmo item de produto sem lote</h4>
+<pre><code>Dado que o usuário está na tela de anúncio
+E clica na aba Anúncio Vinculado
+E clica no botão ⋯ para selecionar um anúncio disponível
+E seleciona um anúncio disponível
+E marca o check de ao menos um item da listagem de produtos do Anúncio
+E o produto NÃO controlar lote ({produto.controlalote} = false)
+E o produto ja estiver incluído na listagem de produtos do interesse na aba principal
+E  sistema deverá exibir a mensagem "Produto já importado no interesse" e impedir a importação do item.
+</code></pre>
+<h4 id="importar-mais-de-uma-vez-o-mesmo-item-de-produto-com-lote">Importar mais de uma vez o mesmo item de produto com lote</h4>
+<pre><code>Dado que o usuário está na tela de anúncio
+E clica na aba Anúncio Vinculado
+E clica no botão ⋯ para selecionar um anúncio disponível
+E seleciona um anúncio disponível
+E marca o check de ao menos um item da listagem de produtos do Anúncio
+E o produto NÃO controlar lote ({produto.controlalote} = true)
+E o produto ja estiver incluído na listagem de produtos do interesse na aba principal
+E o lote do produto seja o mesmo do item já importado
+E  sistema deverá exibir a mensagem "Produto já importado no interesse" e impedir a importação do item.
+</code></pre>
+<h4 id="lancar-interesse-sem-anuncio-vinculado">Lançar Interesse sem Anúncio vinculado</h4>
+<pre><code>Dado que o usuário está na tela de anúncio
+E NÃO seleciona nenhum anúncio disponível
+E clica no botão "Salvar"
+O sistema deverá exibir a mensagem "Interesse sem anúncio vinculado" e impedir a operação.
+</code></pre>
+<h4 id="lancar-interesse-sem-produtos-importados">Lançar Interesse sem produtos importados</h4>
+<pre><code>Dado que o usuário está na tela de anúncio
+E clica no botão ⋯ para selecionar um anúncio disponível
+E seleciona um anúncio disponível
+E NÃO importa nenhum produto de um anúncio
+E clica no botão "Salvar"
+O sistema deverá exibir a mensagem "Interesse sem itens lançados" e impedir a operação.
+</code></pre>
+<h4 id="lancar-interesse-com-anuncio-indisponivel">Lançar interesse com Anúncio Indisponível</h4>
+<pre><code>Dado que o usuário está na tela de anúncio
+E clica na aba Anúncio Vinculado
+E clica no botão ⋯ para selecionar um anúncio
+E seleciona um anúncio com data de expiração menor que DATA_HORA_ATUAL
+O sistema deverá exibir a mensagem "Anúncio indisponível para interesse".
+</code></pre>
+<h2 id="funcionalidade-pesquisar-anuncios-por-produtos">Funcionalidade: Pesquisar Anúncios por Produtos</h2>
+<p>Como usuário do sistema <br />
+  Quero pesquisar Anúncios por Produtos</p>
+<h3 id="cenarios-validos_1">Cenários Válidos:</h3>
+<h4 id="listar-produtos-disponiveis">Listar Produtos disponíveis</h4>
+<pre><code>Dado que o usuário está na tela de Interesses
+E clica no botão "Anúncios"
+E clica na aba "Por Produtos"
+O sistema deverá listar todos os produtos anunciados com saldo disponível e com da data de expiração do anúncio maior ou igual DATA_HORA_ATUAL
+E habilitar o botão "Anunciante" para cada um dos itens de produtos cujo anúncio permite a visualização dos Dado do anunciante.
+</code></pre>
+<h2 id="funcionalidade-registrar-interesse-por-produto-anunciado">Funcionalidade: Registrar Interesse por Produto Anunciado</h2>
+<p>Como usuário do sistema <br />
+  Quero lançar um novo Interesse</p>
+<h3 id="cenarios-validos_2">Cenários Válidos:</h3>
+<h4 id="interessar-por-produto">Interessar por Produto</h4>
+<pre><code>Dado que o usuário está na tela de Interesses
+E clica no botão "Anúncios"
+E clica na aba "Por Produtos"
+E expande um item da listagem de produtos
+E clica no botão "Interessar" do item
+O sistema deverá fechar o Modal Anúncios
+E lançar um novo registro de interesse
+E vincular o anúncio do produto selecionado na aba Anúncio
+E importar o item selecionado no Modal Anúncios para a listagem de produtos da aba principal.
+</code></pre>
+<h2 id="funcionalidade-pesquisar-produtos-anunciados-por-similares">Funcionalidade: Pesquisar Produtos Anunciados Por Similares</h2>
+<p>Como usuário do sistema <br />
+  Quero lançar um novo Interesse</p>
+<h3 id="cenarios-validos_3">Cenários Válidos:</h3>
+<h4 id="visualizar-produtos-anunciados-por-similar">Visualizar Produtos anunciados por Similar</h4>
+<pre><code>Dado que o usuário está na tela de Interesses
+E clica no botão "Anúncios"
+E clica na aba "Por Produtos"
+E expande um item da listagem de produtos
+E clica no botão "Similares"
+O sistema deverá limpar o filtro dos anúncios
+E adicionar uma pesquisa por Princípio Ativo com o valor do Princípio Ativo do item selecionado
+E recarregar a listagem.
+</code></pre>
+<h4 id="cenarios-invalidos_1">Cenários Inválidos:</h4>
+<h4 id="clicar-em-similares-em-item-de-produto-sem-principio-ativo-vinculado">Clicar em Similares em item de produto sem Princípio Ativo vinculado</h4>
+<pre><code>Dado que o usuário está na tela de Interesses
+E clica no botão "Anúncios"
+E clica na aba "Por Produtos"
+E expande um item da listagem de produtos
+E clica no botão "Similares"
+E produto de item selecionado não possuir Princípio Ativo vinculado no cadastro
+O sistema deverá limpar o filtro da tela
+E recarregar a listagem padrão com todos os produtos disponíveis.
+</code></pre>
+<h2 id="funcionalidade-pesquisar-anuncios-por-anunciante">Funcionalidade: Pesquisar Anúncios por Anunciante</h2>
+<p>Como usuário do sistema <br />
+  Quero lançar um novo Interesse</p>
+<h3 id="cenarios-validos_4">Cenários Válidos:</h3>
+<h4 id="listar-anuncios-disponiveis">Listar Anúncios disponíveis</h4>
+<pre><code>Dado que o usuário está na tela de Interesse
+E clica no botão Anúncios
+E clica na aba Por Anunciante
+O sistema deverá exibir todos os anúncios disponíveis, e também seus itens com saldo disponível, com data de expiração maior ou igual DATA_HORA_ATUAL
+E habilitar o botão "Anunciante" para cada anúncio que permite visualizar os Dado do anunciante.
+</code></pre>
+<h2 id="funcionalidade-visualizar-dado-do-anunciante">Funcionalidade: Visualizar Dado do Anunciante</h2>
+<p>Como usuário do sistema <br />
+  Quero lançar um novo Interesse</p>
+<h3 id="cenarios-validos_5">Cenários Válidos:</h3>
+<h4 id="visualizar-dado-do-anunciante-na-pesquisa-por-produto">Visualizar Dado do Anunciante na pesquisa Por Produto</h4>
+<pre><code>Dado que o usuário está na tela de Interesses
+E clica no botão "Anúncios"
+E clica na aba "Por Produtos"
+E expande um item da listagem de produtos
+E clica no botão "Anunciante"
+O sistema deverá exibir o modal "Dado do Anunciante".
+</code></pre>
+<h4 id="visualizar-dados-do-anunciante-na-pesquisa-por-anunciante">Visualizar Dados do Anunciante na pesquisa Por Anunciante</h4>
+<pre><code>Dado que o usuário está na tela de Interesses
+E clica no botão "Anúncios"
+E clica na aba "Por Anunciantes"
+E expande um item da listagem de anúncios
+E clica no botão "Anunciante"
+O sistema deverá exibir o modal "Dados do Anunciante".
+</code></pre>
+<h2 id="funcionalidade-visualizar-anuncio">Funcionalidade: Visualizar Anúncio</h2>
+<p>Como usuário do sistema <br />
+  Quero visualizar os Dado do anúncio</p>
+<h3 id="cenarios-validos_6">Cenários Válidos:</h3>
+<h4 id="visualizar-anuncio-na-pesquisa-por-anunciante">Visualizar Anúncio na pesquisa Por Anunciante</h4>
+<pre><code>Dado que o usuário está na tela de Interesses
+E clica no botão "Anúncios"
+E clica na aba "Por Anunciantes"
+E expande um item da listagem de anúncios
+E clica no botão "Visualizar"
+O sistema deverá exibir o Modal "Dados do Anúncio"
+</code></pre>
+<h2 id="funcionalidade-importar-itens-do-anuncio-visualizado">Funcionalidade: Importar Itens do Anúncio Visualizado</h2>
+<p>Como usuário do sistema <br />
+  Quero importar os itens do Anúncio visualizado</p>
+<h3 id="cenarios-validos_7">Cenários Válidos:</h3>
+<h4 id="importar-todos-os-itens-do-anuncio-visualizado">Importar Todos os itens do Anúncio Visualizado</h4>
+<pre><code>Dado que o usuário está na tela de Interesse
+E clica no botão "Anúncios"
+E clica na aba "Por Anunciantes"
+E expande um item da listagem de anúncios disponíveis
+E clica no botão "Visualizar"
+E marca o check ao menos um item da listagem de produtos do anúncio
+E clica no botão "Importar"
+O sistema deverá fechar o Modal "Dados do Anúncio"
+E fecha o Modal "Anúncios"
+E inclui um novo lançamento de Interesse
+E vincula o anúncio selecionado na aba "Anúncio Vinculado"
+E importa todos os produtos selecionado no modal "Dados do Anúncio" para a listagem de produtos da aba principal do Interesse.
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../mockup/interesse.mockup/" class="btn btn-neutral float-left" title="Mockup"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../mockup/interesse.mockup/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../../..";</script>
+    <script src="../../../../js/theme_extra.js"></script>
+    <script src="../../../../js/theme.js"></script>
+      <script src="../../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

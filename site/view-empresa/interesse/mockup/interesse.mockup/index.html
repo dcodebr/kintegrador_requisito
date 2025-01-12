@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt_BR" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../../img/favicon.ico" />
+    <title>Mockup - K-Integrador</title>
+    <link rel="stylesheet" href="../../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Mockup";
+        var mkdocs_page_input_path = "view-empresa\\interesse\\mockup\\interesse.mockup.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../../.." class="icon icon-home"> K-Integrador
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Database</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../database/database/">Modelo Lógico</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Api</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../api/empresa/">Empresa</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../api/usuario/">Usuário</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../api/marca/">Marca</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../api/principioativo/">Princípio Ativo</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../api/tokens/">Tokens</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../../api/unidadedemedida/">Unidade de Medida</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">View Admin</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Autenticação</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/autenticacao/autenticacao/">Geral</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/autenticacao/mockup/autenticacao.mockup/">Mockup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/autenticacao/regras%20de%20neg%C3%B3cio/autenticacao.bdd/">Regras de Negócio</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Usuário</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/usuario/usuario/">Geral</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/usuario/mockup/usuario.mockup/">Mockup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/usuario/regras%20de%20neg%C3%B3cio/usuario.bdd/">Regras de Negócio</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Empresa</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/empresa/empresa/">Geral</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/empresa/mockup/empresa.mockup/">Mockup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/empresa/regras%20de%20neg%C3%B3cio/empresa.bdd/">Regras de Negócio</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Token</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/admin-token/admin-tokens/">Geral</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/admin-token/mockup/admin-tokens.mockup/">Mockup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/admin-token/regras%20de%20neg%C3%B3cio/admin-tokens.bdd/">Regras de Negócio</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Princípio Ativo</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/principioativo/principioativo/">Geral</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/principioativo/mockup/principioativo.mockup/">Mockup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../../view-admin/principioativo/regras%20de%20neg%C3%B3cio/principioativo.bdd/">Regras de Negócio</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">View Empresa</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >Produto</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../produto/produto/">Geral</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../produto/mockup/produto.mockup/">Mockup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../produto/regras%20de%20neg%C3%B3cio/produto.bdd/">Regras de Negócio</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Unidade de Medida</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../unidadedemedida/unidadedemedida/">Geral</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../unidadedemedida/mockup/unidadedemedida.mockup/">Mockup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../unidadedemedida/regras%20de%20neg%C3%B3cio/unidadedemedida.bdd/">Regras de Negócio</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Marca</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../marca/marca/">Geral</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../marca/mockup/marca.mockup/">Mockup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../marca/regras%20de%20neg%C3%B3cio/marca.bdd/">Regras de Negócio</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Anúncio</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../anuncio/anuncio/">Geral</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../anuncio/mockup/anuncio.mockup/">Mockup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../anuncio/regras%20de%20neg%C3%B3cio/anuncio.bdd/">Regras de Negócio</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Interesse</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../../interesse/">Geral</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Mockup</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#view">View</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#acoes">Ações</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#controles">Controles</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../regras%20de%20neg%C3%B3cio/interesse.bdd/">Regras de Negócio</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../..">K-Integrador</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">View Empresa</li>
+          <li class="breadcrumb-item">Interesse</li>
+      <li class="breadcrumb-item active">Mockup</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="interesse-mockup">Interesse - Mockup</h1>
+<h2 id="view">View</h2>
+<p><img alt="" src="../../mockup/pencil/svg/interesse-aba-principal.svg" /></p>
+<h2 id="acoes">Ações</h2>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th style="text-align: center;">Tipo de Controle</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Anúncios</strong></td>
+<td style="text-align: center;">Botão</td>
+<td>Abre o modal de Pesquisa de Anúncios por Produto</td>
+</tr>
+<tr>
+<td><strong>Filtrar</strong></td>
+<td style="text-align: center;">Botão</td>
+<td>Abre o modal de filtro de Interesses</td>
+</tr>
+<tr>
+<td><strong>Incluir</strong></td>
+<td style="text-align: center;">Botão</td>
+<td>Inclui um novo registro de Interesse</td>
+</tr>
+<tr>
+<td><strong>Excluir</strong></td>
+<td style="text-align: center;">Botão</td>
+<td>Exclui o registro atual de Interesse</td>
+</tr>
+<tr>
+<td><strong>Salvar</strong></td>
+<td style="text-align: center;">Botão</td>
+<td>Salva o registro atual de Interesse</td>
+</tr>
+</tbody>
+</table>
+<h2 id="controles">Controles</h2>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th style="text-align: center;">Tipo de Controle</th>
+<th>Descrição</th>
+<th style="text-align: center;">Obrig.</th>
+<th style="text-align: center;">Tam. Max.</th>
+<th style="text-align: center;">Validação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aba Produtos</td>
+<td style="text-align: center;">Aba de Pagina</td>
+<td>Identifica a aba Principal</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>Aba Anúncio Vinculado</td>
+<td style="text-align: center;">Aba de Pagina</td>
+<td>Identifica a Anúncio Vinculado</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>Total Anunciado</td>
+<td style="text-align: center;">Caixa de Texto</td>
+<td>Exibe o total de produtos anunciados da aba Anúncio Vinculado</td>
+<td style="text-align: center;">AUTO</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Campo Numérico #,####0.0000</td>
+</tr>
+<tr>
+<td>Total do Interesse</td>
+<td style="text-align: center;">Caixa de Texto</td>
+<td>Exibe o total de produtos do Interesse</td>
+<td style="text-align: center;">AUTO</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Campo Numérico #,####0.0000</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="produtos-do-interesse">Produtos do Interesse</h1>
+<h2 id="controles_1">Controles</h2>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th style="text-align: center;">Tipo de Controle</th>
+<th>Descrição</th>
+<th style="text-align: center;">Obrig.</th>
+<th style="text-align: center;">Tam. Max.</th>
+<th style="text-align: center;">Validação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Código</td>
+<td style="text-align: center;">Caixa de Texto</td>
+<td>Código do Produto</td>
+<td style="text-align: center;">SIM</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">Campo Bloqueado</td>
+</tr>
+<tr>
+<td>Descrição</td>
+<td style="text-align: center;">Aba de Pagina</td>
+<td>Descrição do Produto</td>
+<td style="text-align: center;">SIM</td>
+<td style="text-align: center;">255</td>
+<td style="text-align: center;">Campo Bloqueado</td>
+</tr>
+<tr>
+<td>Qtde</td>
+<td style="text-align: center;">Aba de Pagina</td>
+<td>Quantidade selecionada do Item do interesse</td>
+<td style="text-align: center;">SIM</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Campo Numérico #,####0.0000</td>
+</tr>
+<tr>
+<td>Un</td>
+<td style="text-align: center;">Aba de Pagina</td>
+<td>Identifica a Aba a ser visualizada</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Campo Bloqueado</td>
+</tr>
+<tr>
+<td>Valor Un</td>
+<td style="text-align: center;">Aba de Pagina</td>
+<td>Informa o valor do item do interesse</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><ul><li>Campo Bloqueado</li><li>Campo Numérico #,####0.0000</li></ul></td>
+</tr>
+<tr>
+<td>Valor Total</td>
+<td style="text-align: center;">Caixa de Texto</td>
+<td>Totaliza o valor do item do interesse</td>
+<td style="text-align: center;">AUTO</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Campo Numérico #,####0.0000</td>
+</tr>
+<tr>
+<td>➕</td>
+<td style="text-align: center;">Botão</td>
+<td>Atualiza as informações o item do interesse</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>❌</td>
+<td style="text-align: center;">Botão</td>
+<td>Exclui um item do interesse</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="aba-anuncio-vinculado">Aba Anúncio Vinculado</h1>
+<h2 id="view_1">View</h2>
+<p><img alt="" src="../../mockup/pencil/svg/interesse-aba-anuncio-vinculado.svg" /></p>
+<h2 id="controles_2">Controles</h2>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th style="text-align: center;">Tipo de Controle</th>
+<th>Descrição</th>
+<th style="text-align: center;">Obrig.</th>
+<th style="text-align: center;">Tam. Max.</th>
+<th style="text-align: center;">Validação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Código</td>
+<td style="text-align: center;">Caixa de Texto</td>
+<td>Código do Anúncio</td>
+<td style="text-align: center;">SIM</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>⋯</td>
+<td style="text-align: center;">Botão</td>
+<td>Carregamento da seleção do Anúncio</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>Data Cadastro</td>
+<td style="text-align: center;">Caixa de Texto</td>
+<td>Data de cadastro do Anúncio</td>
+<td style="text-align: center;">AUTO</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">Campo de Data/Cadastro DD/MM/YYYY HH:mm:ss</td>
+</tr>
+<tr>
+<td>Anunciante</td>
+<td style="text-align: center;">Caixa de Texto</td>
+<td>Nome/Razão Social do anunciante</td>
+<td style="text-align: center;">AUTO</td>
+<td style="text-align: center;">255</td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="produtos-da-aba-anuncio-vinculado">Produtos da Aba Anúncio Vinculado</h1>
+<h2 id="controles_3">Controles</h2>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th style="text-align: center;">Tipo de Controle</th>
+<th>Descrição</th>
+<th style="text-align: center;">Obrig.</th>
+<th style="text-align: center;">Tam. Max.</th>
+<th style="text-align: center;">Validação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Imp. Seleção</td>
+<td style="text-align: center;">Botão</td>
+<td>Importaos os itens selecionados de produtos do anúncio para a Aba Principal</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>Imp. Todos</td>
+<td style="text-align: center;">Botão</td>
+<td>Importa todos os produtos do anúncio para a Aba Principal</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>-</td>
+<td style="text-align: center;">Tabela</td>
+<td>Lista todos os produtos do anúncio</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><ol><li>☑</li><li>Código</li><li>Descrição</li><li>Marca</li><li>Princípio Ativo</li><li>Un</li><li>Qtde</li><li>Valor Un</li><li>Valor Total</li></ol></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="pesquisa-de-anuncios">Pesquisa de Anúncios</h1>
+<h2 id="view_2">View</h2>
+<p><img alt="" src="../../mockup/pencil/svg/interesse-pesquisa-por-produto.svg" /></p>
+<h2 id="acoes_1">Ações</h2>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th style="text-align: center;">Tipo de Controle</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>❌</strong></td>
+<td style="text-align: center;">Botão</td>
+<td>Fecha o Modal de Pesquisa Por Anúncios</td>
+</tr>
+<tr>
+<td><strong>Filtrar</strong></td>
+<td style="text-align: center;">Botão</td>
+<td>Abre o Modal de Filtro de Anúncios</td>
+</tr>
+</tbody>
+</table>
+<h2 id="controles_4">Controles</h2>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th style="text-align: center;">Tipo de Controle</th>
+<th>Descrição</th>
+<th style="text-align: center;">Obrig.</th>
+<th style="text-align: center;">Tam. Max.</th>
+<th style="text-align: center;">Validação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aba Produtos</td>
+<td style="text-align: center;">Aba de Pagina</td>
+<td>Aba de Listagem de produtos anunciados</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>Aba Anúncios</td>
+<td style="text-align: center;">Aba de Pagina</td>
+<td>Aba de Listagem de anúncios e anunciantes</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="aba-produtos-da-pesquisa-de-anuncios">Aba Produtos da Pesquisa de Anúncios</h1>
+<h2 id="view_3">View</h2>
+<p><img alt="" src="../../mockup/pencil/svg/interesse-pesquisa-por-produto.svg" /></p>
+<h2 id="acoes_2">Ações</h2>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th style="text-align: center;">Tipo de Controle</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Interessar</strong></td>
+<td style="text-align: center;">Botão</td>
+<td>Lança um novo registro de Interesse com o item em questão</td>
+</tr>
+<tr>
+<td><strong>Anunciante</strong></td>
+<td style="text-align: center;">Botão</td>
+<td>Abre o Modal Dados do Anunciante</td>
+</tr>
+<tr>
+<td><strong>Similares</strong></td>
+<td style="text-align: center;">Botão</td>
+<td>Modifica o Filtro do módulo para buscar itens com o mesmo princípio ativo do item em questão</td>
+</tr>
+</tbody>
+</table>
+<h2 id="controles_5">Controles</h2>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th style="text-align: center;">Tipo de Controle</th>
+<th>Descrição</th>
+<th style="text-align: center;">Obrig.</th>
+<th style="text-align: center;">Tam. Max.</th>
+<th style="text-align: center;">Validação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-</td>
+<td style="text-align: center;">Tabela</td>
+<td>Lista os produtos anunciados</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><ol><li>Nome do Produto</li><li>Marca</li><li>Preço</li><li>Princípio Ativo</li><li>Qtde</li>Un<li></li><li>Interessar</li><li>Anunciante</li><li>Similares</li></ol></td>
+</tr>
+<tr>
+<td>Lotes</td>
+<td style="text-align: center;">Tabela</td>
+<td>Lista os Lotes de cada produto anunciado</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><ol><li>Lote</li><li>Data Fabricação</li><li>Data Validade</li><li>Qtde</li></ol></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="aba-anuncios-da-pesquisa-por-anuncios">Aba Anuncios da Pesquisa por Anúncios</h1>
+<h2 id="view_4">View</h2>
+<p><img alt="" src="../../mockup/pencil/svg/interesse-pesquisa-por-anunciante.svg" /></p>
+<h2 id="acoes_3">Ações</h2>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th style="text-align: center;">Tipo de Controle</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Visualizar</strong></td>
+<td style="text-align: center;">Botão</td>
+<td>Abre o Modal de Visualização do Anúncio</td>
+</tr>
+<tr>
+<td><strong>Anunciante</strong></td>
+<td style="text-align: center;">Botão</td>
+<td>Abre o Modal de Dados do Anunciante</td>
+</tr>
+</tbody>
+</table>
+<h2 id="controles_6">Controles</h2>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th style="text-align: center;">Tipo de Controle</th>
+<th>Descrição</th>
+<th style="text-align: center;">Obrig.</th>
+<th style="text-align: center;">Tam. Max.</th>
+<th style="text-align: center;">Validação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-</td>
+<td style="text-align: center;">Tabela</td>
+<td>Lista os anúncios disponíveis</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><ol><li>Código do Anúncio</li><li>Anunciante</li><li>Valor Total</li><li>Visualizar</li><li>Anunciante</li></ol></td>
+</tr>
+<tr>
+<td>Produtos</td>
+<td style="text-align: center;">Tabela</td>
+<td>Lista itens de cada anúncio</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><ol><li>Código</li><li>Descrição</li><li>Marca</li><li>Princípio Ativo</li><li>UN</li><li>Qtde</li><li>Valor Un</li><li>Valor Total</li></ol></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="dados-do-anunciante">Dados do Anunciante</h1>
+<h2 id="view_5">View</h2>
+<p><img alt="" src="../../mockup/pencil/svg/interesse-pesquisa-dados-anunciante.svg" /></p>
+<h2 id="acoes_4">Ações</h2>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th style="text-align: center;">Tipo de Controle</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>❌</strong></td>
+<td style="text-align: center;">Botão</td>
+<td>Fecha o Modal Dados do Anunciante</td>
+</tr>
+</tbody>
+</table>
+<h2 id="controles_7">Controles</h2>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th style="text-align: center;">Tipo de Controle</th>
+<th>Descrição</th>
+<th style="text-align: center;">Obrig.</th>
+<th style="text-align: center;">Tam. Max.</th>
+<th style="text-align: center;">Validação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Empresa</td>
+<td style="text-align: center;">Texto</td>
+<td>Exibe o nome/razão social do Anunciante</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>CNPJ</td>
+<td style="text-align: center;">Texto</td>
+<td>Exibe o CNPJ do Anunciante</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>Endereço</td>
+<td style="text-align: center;">Texto</td>
+<td>Exibe o endereço e número do Anunciante</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>Cidade</td>
+<td style="text-align: center;">Texto</td>
+<td>Exibe a cidade do Anuciante</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>UF</td>
+<td style="text-align: center;">Texto</td>
+<td>Exibe Unidade Federativa do Anunciante</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>CEP</td>
+<td style="text-align: center;">Texto</td>
+<td>Exibe o CEP do Anunciante</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>Telefone</td>
+<td style="text-align: center;">Texto</td>
+<td>Exibe o telefone do Anunciante</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>Email</td>
+<td style="text-align: center;">Texto</td>
+<td>Exibe o e-mail de contato do Anunciante</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>---</td>
+<td style="text-align: center;"></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<h1 id="visualizacao-do-anuncio">Visualização do Anúncio</h1>
+<h2 id="view_6">View</h2>
+<p><img alt="" src="../../mockup/pencil/svg/interesse-pesquisa-por-anunciante-anuncio.svg" /></p>
+<h2 id="acoes_5">Ações</h2>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th style="text-align: center;">Tipo de Controle</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>❌</strong></td>
+<td style="text-align: center;">Botão</td>
+<td>Fecha o Modal Dados do Anúncio</td>
+</tr>
+<tr>
+<td><strong>Anunciante</strong></td>
+<td style="text-align: center;">Botão</td>
+<td>Abre o Modal Dados do Anunciante</td>
+</tr>
+</tbody>
+</table>
+<h2 id="controles_8">Controles</h2>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th style="text-align: center;">Tipo de Controle</th>
+<th>Descrição</th>
+<th style="text-align: center;">Obrig.</th>
+<th style="text-align: center;">Tam. Max.</th>
+<th style="text-align: center;">Validação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Código</td>
+<td style="text-align: center;">Texto</td>
+<td>Exibe o código do Anúncio</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>Data Cadastro</td>
+<td style="text-align: center;">Texto</td>
+<td>Exibe a data de Cadastro do Anúncio</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>Data Expiração</td>
+<td style="text-align: center;">Texto</td>
+<td>Exibe a Data de Expiração do Anúncio</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td>Produtos</td>
+<td style="text-align: center;">Texto</td>
+<td>Lista os itens de produtos do Anúncio</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><ol><li>☑</li><li>Código</li><li>Descrição</li><li>Marca</li><li>Princípio Ativo</li><li>Un</li><li>Qtde</li><li>Valor Un</li><li>Valor Total</li></oi></td>
+</tr>
+<tr>
+<td>Total Selecionado</td>
+<td style="text-align: center;">Caixa de Texto</td>
+<td>Totaliza o valor dos itens selecionados pela caixa de seleção ☑</td>
+<td style="text-align: center;">AUTO</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Valor numérico #,####0.0000</td>
+</tr>
+<tr>
+<td>Total Anúncio</td>
+<td style="text-align: center;">Caixa de Texto</td>
+<td>Totaliza o valor de todos os itens do Anúncio</td>
+<td style="text-align: center;">AUTO</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Valor numérico #,####0.0000</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../interesse/" class="btn btn-neutral float-left" title="Geral"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../regras%20de%20neg%C3%B3cio/interesse.bdd/" class="btn btn-neutral float-right" title="Regras de Negócio">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../interesse/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../regras%20de%20neg%C3%B3cio/interesse.bdd/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../../..";</script>
+    <script src="../../../../js/theme_extra.js"></script>
+    <script src="../../../../js/theme.js"></script>
+      <script src="../../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
