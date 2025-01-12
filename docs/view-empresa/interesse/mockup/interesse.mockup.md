@@ -104,7 +104,7 @@
 
 ---
 
-# Aba Anuncios da Pesquisa por Anúncios
+# Aba Anúncios da Pesquisa por Anúncios
 
 ## View
 ![](../../mockup/pencil/svg/interesse-pesquisa-por-anunciante.svg)
@@ -146,7 +146,7 @@
 |Email|Texto|Exibe o e-mail de contato do Anunciante|-|-|-|
 ---
 
-# Visualização do Anúncio
+# Dados do Anúncio
 
 ## View
 ![](../../mockup/pencil/svg/interesse-pesquisa-por-anunciante-anuncio.svg)
