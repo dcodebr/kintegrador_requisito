@@ -8,12 +8,12 @@ theme:
     - rust
 nav:
   - Api:
-    - Empresa: api/api.empresa.md
-    - Usuário: api/api.usuario.md
-    - Marca: api/api.marca.md
-    - Princípio Ativo: api/api.principioativo.md
-    - Tokens: api/api.tokens.md
-    - Unidade de Medida: api/api.unidadedemedida.md
+    - Empresa: api/empresa.md
+    - Usuário: api/usuario.md
+    - Marca: api/marca.md
+    - Princípio Ativo: api/principioativo.md
+    - Tokens: api/tokens.md
+    - Unidade de Medida: api/unidadedemedida.md
   - View Admin:
     - Autenticação: 
       - Geral: view-admin/autenticacao/autenticacao.md
