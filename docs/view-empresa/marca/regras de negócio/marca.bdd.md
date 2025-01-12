@@ -1,7 +1,7 @@
 # Marca - Regras de Negócio
 
 ## Funcionalidade: Cadastro de Marca
-  Como administrador do sistema   
+  Como usuário do sistema   
   Quero cadastrar um Marca Novo
 
 ### Cenários Válidos: 

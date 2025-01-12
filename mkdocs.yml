@@ -28,19 +28,19 @@ nav:
       - Geral: view-admin/principioativo/principioativo.md
       - Mockup: view-admin/principioativo/mockup/principioativo.mockup.md
       - Regras de Negócio: view-admin/principioativo/regras de negócio/principioativo.bdd.md
-    - Unidade de Medida:
-      - Geral: view-admin/unidadedemedida/unidadedemedida.md
-      - Mockup: view-admin/unidadedemedida/mockup/unidadedemedida.mockup.md
-      - Regras de Negócio: view-admin/unidadedemedida/regras de negócio/unidadedemedida.bdd.md
-    - Marca:
-      - Geral: view-admin/marca/marca.md
-      - Mockup: view-admin/marca/mockup/marca.mockup.md
-      - Regras de Negócio: view-admin/marca/regras de negócio/marca.bdd.md
   - View Empresa:
     - Produto:
       - Geral: view-empresa/produto/produto.md
       - Mockup: view-empresa/produto/mockup/produto.mockup.md
       - Regras de Negócio: view-empresa/produto/regras de negócio/produto.bdd.md
+    - Unidade de Medida:
+      - Geral: view-empresa/unidadedemedida/unidadedemedida.md
+      - Mockup: view-empresa/unidadedemedida/mockup/unidadedemedida.mockup.md
+      - Regras de Negócio: view-empresa/unidadedemedida/regras de negócio/unidadedemedida.bdd.md
+    - Marca:
+      - Geral: view-empresa/marca/marca.md
+      - Mockup: view-empresa/marca/mockup/marca.mockup.md
+      - Regras de Negócio: view-empresa/marca/regras de negócio/marca.bdd.md
     - Anúncio:
       - Geral: view-empresa/anuncio/anuncio.md
       - Mockup: view-empresa/anuncio/mockup/anuncio.mockup.md
