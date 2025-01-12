@@ -7,6 +7,8 @@ theme:
     - yaml
     - rust
 nav:
+  - Database: 
+    - Modelo Lógico: database/database.md
   - Api:
     - Empresa: api/api.empresa.md
     - Usuário: api/api.usuario.md
