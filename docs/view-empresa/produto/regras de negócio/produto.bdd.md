@@ -1,7 +1,7 @@
 # Produtos - Regras de Negócio
 
 ## Funcionalidade: Cadastro de Produtos
-Como administrador do sistema  
+Como usuário do sistema  
 Quero cadastrar um Produto Novo
 
 ### Cenários Válidos:
