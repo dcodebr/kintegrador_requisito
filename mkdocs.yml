@@ -33,3 +33,11 @@ nav:
       - Geral: view-empresa/produto/produto.md
       - Mockup: view-empresa/produto/mockup/produto.mockup.md
       - Regras de Negócio: view-empresa/produto/regras de negócio/produto.bdd.md
+    - Anúncio:
+      - Geral: view-empresa/anuncio/anuncio.md
+      - Mockup: view-empresa/anuncio/mockup/anuncio.mockup.md
+      - Regras de Negócio: view-empresa/anuncio/regras de negócio/anuncio.bdd.md
+    - Interesse:
+      - Geral: view-empresa/interesse/interesse.md
+      - Mockup: view-empresa/interesse/mockup/interesse.mockup.md
+      - Regras de Negócio: view-empresa/interesse/regras de negócio/interesse.bdd.md
