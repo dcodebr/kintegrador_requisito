@@ -13,7 +13,7 @@ Quero cadastrar um Produto Novo
     E quando ele seleciona o Princípio Ativo
     E quando ele seleciona a Marca/Laboratório
     E quanddo ele seleciona a Unidade de Medida
-    E quando produto possuir lote, deve conter as informações Lote, Data Fabricação, Data Validade, Quantidade preenchida.
+    E quando ele marca o campo Controle por lote, deve habilitar a seção Lote e as informações Lote, Data Fabricação, Data Validade, Quantidade preenchida.
     Então o sistema deve exibir a mensagem "Cadastro realizado com sucesso"
     E o produto deve ser registrado no sistema
 
@@ -25,6 +25,13 @@ Quero cadastrar um Produto Novo
     E clica no botão "Salvar"
     Então o sistema deve exibir a mensagem de validação: "Descrição inválido"
     E o cadastro não deve ser realizado
+
+#### Cadastro com Controle por Lote marcado e não informado Lote
+    Dado que o usuário está na tela de cadastro
+    Quando ele marca o campo [Controle por lote]
+    E NÃO informa nenhum [Lote]
+    E clica no botão "Salvar"
+    Então o sistema deve exibir a mensagem de validação: "Controle por Lote habilitado mas não informado lote"
 
 #### Cadastro sem Estoque
     Dado que o usuário está na tela de cadastro

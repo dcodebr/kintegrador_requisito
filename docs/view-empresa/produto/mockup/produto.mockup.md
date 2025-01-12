@@ -15,6 +15,7 @@
 |Nome|Tipo de Controle|Descrição|Obrigatório|Tamanho Max.|Validação|
 |---|:---:|---|:---:|:---:|:---:|
 |Código|Identidade|Identifica o registro|AUTO|-|-|
+|Controle por lote|Checkbox|Controlar produto por lote|NÃO|-|Se selecionado habilita para a inserção de lotes do produto|
 |Descrição|Caixa de Texto|Descrição do Produto|SIM|255|-|
 |Estoque|Caixa de Texto|Estoque Total levando em consideração as quantidades dos lotes|SIM|-|-|
 |Princípio Ativo|Caixa de Seleção|Princípio Ativo do Produto|SIM|255|-|
