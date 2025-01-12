@@ -28,6 +28,10 @@ nav:
       - Geral: view-admin/unidadedemedida/unidadedemedida.md
       - Mockup: view-admin/unidadedemedida/mockup/unidadedemedida.mockup.md
       - Regras de Negócio: view-admin/unidadedemedida/regras de negócio/unidadedemedida.bdd.md
+    - Marca:
+      - Geral: view-admin/marca/marca.md
+      - Mockup: view-admin/marca/mockup/marca.mockup.md
+      - Regras de Negócio: view-admin/marca/regras de negócio/marca.bdd.md
   - View Empresa:
     - Produto:
       - Geral: view-empresa/produto/produto.md
