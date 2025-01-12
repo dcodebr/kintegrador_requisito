@@ -8,6 +8,10 @@ theme:
     - rust
 nav:
   - View Admin:
+    - Autenticação: 
+      - Geral: view-admin/autenticacao/autenticacao.md
+      - Mockup: view-admin/autenticacao/mockup/autenticacao.mockup.md
+      - Regras de Negócio: view-admin/autenticacao/regras de negócio/autenticacao.bdd.md
     - Usuário:
       - Geral: view-admin/usuario/usuario.md
       - Mockup: view-admin/usuario/mockup/usuario.mockup.md
