@@ -214,7 +214,7 @@ E quando ele preenche o campo Estoque
 E quando ele seleciona o Princípio Ativo
 E quando ele seleciona a Marca/Laboratório
 E quanddo ele seleciona a Unidade de Medida
-E quando produto possuir lote, deve conter as informações Lote, Data Fabricação, Data Validade, Quantidade preenchida.
+E quando ele marca o campo Controle por lote, deve habilitar a seção Lote e as informações Lote, Data Fabricação, Data Validade, Quantidade preenchida.
 Então o sistema deve exibir a mensagem "Cadastro realizado com sucesso"
 E o produto deve ser registrado no sistema
 </code></pre>
@@ -225,6 +225,13 @@ Quando ele NÃO preenche o campo Descrição
 E clica no botão "Salvar"
 Então o sistema deve exibir a mensagem de validação: "Descrição inválido"
 E o cadastro não deve ser realizado
+</code></pre>
+<h4 id="cadastro-com-controle-por-lote-marcado-e-nao-informado-lote">Cadastro com Controle por Lote marcado e não informado Lote</h4>
+<pre><code>Dado que o usuário está na tela de cadastro
+Quando ele marca o campo [Controle por lote]
+E NÃO informa nenhum [Lote]
+E clica no botão "Salvar"
+Então o sistema deve exibir a mensagem de validação: "Controle por Lote habilitado mas não informado lote"
 </code></pre>
 <h4 id="cadastro-sem-estoque">Cadastro sem Estoque</h4>
 <pre><code>Dado que o usuário está na tela de cadastro
